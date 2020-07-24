@@ -6,7 +6,7 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
-Class CuboidMaker{
+class CuboidMaker2{
     constructor(length, width, height){
     this.length= length;
     this.width= width;
@@ -18,14 +18,12 @@ Class CuboidMaker{
   surfaceArea(){
     return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
   }
-  const Cuboid = new CuboidMaker();
-  Cuboid.length(4);
-  Cuboid.width(5);
-  Cuboid.height(5);
+  
 }
+const cuboid2 = new CuboidMaker2(4,5,5);
   // Test your volume and surfaceArea methods by uncommenting the logs below:
-   console.log(cuboid.volume()); //100
-   console.log(cuboid.surfaceArea()); //130
+   console.log(cuboid2.volume()); //100
+   console.log(cuboid2.surfaceArea()); //130
   
   
   
